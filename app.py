@@ -9,7 +9,7 @@ load_dotenv()
 
 def getLLMStory(navn, beskrivelse, morsom):
     llm = OpenAI(
-        model_name="gpt-4", 
+        model_name="text-davinci-003", 
         temperature=0.9
     )
     examples = [
