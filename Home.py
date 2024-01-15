@@ -64,7 +64,7 @@ def display_activities(day):
             st.write("**Login Code:** 202301#")
             st.write("Use the same code to open the door to the room you have booked:")
             st.write("**Room Name:** DON PASQUALE")
-            st.image('images/Ticket.png')  # Replace with the actual image URL or path
+            st.image('images/ticket.png')  # Replace with the actual image URL or path
 
         st.subheader('Hotel Bookings')
 
