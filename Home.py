@@ -1,7 +1,5 @@
 import streamlit as st
-import webbrowser
 import pandas as pd
-
 
 def display_activities(day):
 
@@ -11,6 +9,7 @@ def display_activities(day):
         st.write("Inspirert av denne suppen, begynte Enrico å eksperimentere. Han laget en myk krem av melk og helte deretter flytende mørk sjokolade over. Den varme sjokoladen 'rev seg selv opp' ved kontakt med den kalde kremen, på samme måte som stracciatella-suppen. Dette var begynnelsen på stracciatella-is, en oppfinnelse som tilfeldigvis endret iskremens verden for alltid.")
 
         st.write("Og nå kommer overraskelsen: Vi skal besøke Ristorante La Marianna i Bergamo for å smake på denne originale stracciatella-isen.")
+        
 
     elif day == 'tickets':
         # Airplane Tickets
@@ -39,7 +38,7 @@ def display_activities(day):
             st.write("You will go out at a place called Viale delle Mura 40 S.Giacomo.")
             st.write("The bus ticket costs 2.50€ and you can buy it on the bus. The bus ride takes about 30 minutes.")
             st.write("Here is the Google Maps link for the route:")
-            st.write("[Google Maps](https://www.google.com/maps/dir/Bergamo+%2F+Orio+al+Serio+Airport+(BGY),+Via+Aeroporto,+Orio+al+Serio,+Province+of+Bergamo,+Italy/Porta+San+Giacomo,+Via+Sant'Alessandro,+73,+24121+Bergamo+BG,+Italy/@45.6846884,9.6645461,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x4781506f9e32830d:0x177c7faf1030082!2m2!1d9.7074056!2d45.668978!1m5!1m1!1s0x47815114e9dc2833:0xeda380eefc31254a!2m2!1d9.6630287!2d45.7012292!3e3?entry=ttu)")
+            st.markdown(f"[Open Google Maps](https://www.google.com/maps/dir/Bergamo+%2F+Orio+al+Serio+Airport+(BGY),+Via+Aeroporto,+Orio+al+Serio,+Province+of+Bergamo,+Italy/Porta+San+Giacomo,+Via+Sant'Alessandro,+73,+24121+Bergamo+BG,+Italy/@45.6846884,9.6645461,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x4781506f9e32830d:0x177c7faf1030082!2m2!1d9.7074056!2d45.668978!1m5!1m1!1s0x47815114e9dc2833:0xeda380eefc31254a!2m2!1d9.6630287!2d45.7012292!3e3?entry=ttu)", unsafe_allow_html=True)
             st.write("First image is the buss stop:")
             st.image('images\e.png')
             st.image('images\ew.png')
@@ -53,10 +52,7 @@ def display_activities(day):
             st.write('Estimated time of arrival: 14:00')
             st.write('Hotel Name: B&B San Lorenzo Bergamo')
             st.write('Address: Via Gombito 4, Bergamo')
-            google_maps_url = "https://www.google.com/maps?q=Via+Gombito+4,+Bergamo"  # Replace with the correct Google Maps URL
-            if st.button("Open Google Maps 'Via Gombito 4, Bergamo'"):
-                webbrowser.open_new_tab(google_maps_url)
-
+            st.markdown(f"[Open Google Maps](https://www.google.com/maps?q=Via+Gombito+4,+Bergamo)", unsafe_allow_html=True)
             st.subheader('Access Instructions')
             st.image('images\Hotel11.jpg')  # Replace with the actual image URL or path
 
@@ -114,35 +110,26 @@ def display_activities(day):
                 st.write('Utforsk den historiske festningen La Rocca, som tilbyr fantastisk panoramautsikt over Bergamo og omgivelsene.')
                 st.write('Du kan gå inn i museet for å lære mer om det og også gå opp på toppen av festningen. Ved siden av kan du gå inn i denne vakre parken - et minnesmerke for de falne i første og andre verdenskrig.')
                 st.image('images\La Rocca.jpg')
-                google_maps_url = "https://www.google.com/maps?q=La+Rocca,+Bergamo"  # Erstatt med ønsket Google Maps URL
-                if st.button("Åpne Google Maps 'La Rocca'"):
-                    webbrowser.open_new_tab(google_maps_url)
+                st.markdown(f"[Open Google Maps](https://www.google.com/maps?q=La+Rocca,+Bergamo)", unsafe_allow_html=True)
 
             st.image('images\Colleoniapel.jpg')
             with st.expander("Aktivitet 2: Colleoni's Kapell"):
                 st.write("Oppdag det vakre Colleoni's Kapell, et mesterverk av renessansearkitektur prydet med intrikate dekorasjoner.")
                 st.image('images\Colleoniapel.jpg')
-                google_maps_url = "https://www.google.com/maps?q=Colleoni's+Chapel,+Bergamo"  # Erstatt med ønsket Google Maps URL
-                if st.button("Åpne Google Maps 'Colleoni's Kapell'", key="google_maps_3"):
-                    webbrowser.open_new_tab(google_maps_url)
+                st.markdown(f"[Open Google Maps](https://www.google.com/maps?q=Colleoni's+Chapel,+Bergamo)", unsafe_allow_html=True)
 
             st.image('images\Piazza Vecchia.jpg')
             with st.expander("Aktivitet 3: Piazza Vecchia"):
                 st.write("Beundre den vakre plassen, hvor du vil se Civic Tower. Et tårn du kan gå opp i og se hele byen. Du vil også se Basilica di Santa Maria Maggiore, en vakker kirke. Det anbefales å dra om kvelden for å se solnedgangen. Åpningstidene er fra 10:00 til 18:00.")
                 st.image('images\Piazza Vecchia.jpg')
-                google_maps_url = "https://www.google.com/maps?q=Basilica+di+Santa+Maria+Maggiore,+Bergamo"  # Erstatt med ønsket Google Maps URL
-                if st.button("Åpne Google Maps 'Basilica di Santa Maria Maggiore'", key="google_maps_4"):
-                    webbrowser.open_new_tab(google_maps_url)
+                st.markdown(f"[Open Google Maps](https://www.google.com/maps?q=Basilica+di+Santa+Maria+Maggiore,+Bergamo)", unsafe_allow_html=True)
 
             st.image('images\mura.jpg')
             with st.expander('Aktivitet 4: Bergamos murer'):
                 st.write('Utforsk de historiske murene i Bergamo, som omgir den gamle byen og tilbyr panoramautsikt over byen.')
                 st.write('Du kan gå langs murene og nyte den vakre naturen. Du kan besøke Porta San Giacomo, en av hovedportene til murene.')
                 st.image('images\mura.jpg')
-                google_maps_url = "https://www.google.com/maps?q=Walls+of+Bergamo"  # Erstatt med ønsket Google Maps URL
-                if st.button("Åpne Google Maps 'Bergamos murer'"):
-                    webbrowser.open_new_tab(google_maps_url)
-
+                st.markdown(f"[Open Google Maps](https://www.google.com/maps?q=Walls+of+Bergamo)", unsafe_allow_html=True)
 
 
             # Sample Data
@@ -165,7 +152,7 @@ def display_activities(day):
                         with st.expander("Info"):
                             st.write(about)
                             if st.button("View on Maps", key=name):
-                                webbrowser.open(maps_link)
+                                st.markdown(maps_link, unsafe_allow_html=True)
 
             if __name__ == "__main__":
                 main()
@@ -182,17 +169,13 @@ def display_activities(day):
         with st.expander('Activity 1: Explore Milan Cathedral'):
             st.write('Visit the iconic Milan Cathedral, a masterpiece of Gothic architecture.')
             st.image('https://source.unsplash.com/featured/?milan-cathedral')
-            google_maps_url = "https://www.google.com/maps?q=Milan+Cathedral"  # Replace with your desired Google Maps URL
-            if st.button("Open Google Maps", key="google_maps_5"):
-                webbrowser.open_new_tab(google_maps_url)
+            st.markdown(f"[Open Google Maps](https://www.google.com/maps?q=Milan+Cathedral)", unsafe_allow_html=True)
 
         st.image('https://source.unsplash.com/featured/?san-vigilio')
         with st.expander('Activity 2: Visit Teatro alla Scala'):
             st.write('Explore the historic Teatro alla Scala, one of the worlds most famous opera houses.')
             st.image('https://source.unsplash.com/featured/?teatro-alla-scala')
-            google_maps_url = "https://www.google.com/maps"  # Replace with your desired Google Maps URL
-            if st.button("Open Google Maps", key="google_maps_6"):
-                webbrowser.open_new_tab(google_maps_url)
+            st.markdown(f"[Open Google Maps](https://www.google.com/maps)", unsafe_allow_html=True)
         
                 # Sample Data
         restaurants = [
@@ -211,7 +194,7 @@ def display_activities(day):
                         st.write(about)
                         st.image(image)
                         if st.button("View on Maps", key=name):
-                            webbrowser.open(maps_link)
+                            st.markdown(maps_link, unsafe_allow_html=True)
 
         if __name__ == "__main__":
             main()
