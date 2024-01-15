@@ -20,8 +20,8 @@ def display_activities(day):
             st.write('Departure Time: 09:55')
             st.write('Departure Airport: Oslo Torp')
             # ... add other details as needed
-            st.image('images\Boarding-pass1.png')  # Replace with your actual image URL
-            st.image('images\Boarding-pass2.png')  # Replace with your actual image URL
+            st.image('images/Boarding-pass1.png')  # Replace with your actual image URL
+            st.image('images/Boarding-pass2.png')  # Replace with your actual image URL
 
         with st.expander('Milan Bergamo to Oslo Torp'):
             st.write('Date: January 21, 2024')
@@ -29,8 +29,8 @@ def display_activities(day):
             st.write('Departure Time: 14:55')
             st.write('Departure Airport: Milan Bergamo')
             # ... add other details as needed
-            # st.image('images\Boarding-pass1.png')  # Replace with your actual image URL
-            # st.image('images\Boarding-pass2.png')  # Replace with your actual image URL
+            # st.image('images/Boarding-pass1.png')  # Replace with your actual image URL
+            # st.image('images/Boarding-pass2.png')  # Replace with your actual image URL
 
         st.subheader('Bus Ticket to hotel')
         with st.expander('Bus Ticket'):
@@ -40,8 +40,8 @@ def display_activities(day):
             st.write("Here is the Google Maps link for the route:")
             st.markdown(f"[Open Google Maps](https://www.google.com/maps/dir/Bergamo+%2F+Orio+al+Serio+Airport+(BGY),+Via+Aeroporto,+Orio+al+Serio,+Province+of+Bergamo,+Italy/Porta+San+Giacomo,+Via+Sant'Alessandro,+73,+24121+Bergamo+BG,+Italy/@45.6846884,9.6645461,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x4781506f9e32830d:0x177c7faf1030082!2m2!1d9.7074056!2d45.668978!1m5!1m1!1s0x47815114e9dc2833:0xeda380eefc31254a!2m2!1d9.6630287!2d45.7012292!3e3?entry=ttu)", unsafe_allow_html=True)
             st.write("First image is the buss stop:")
-            st.image('images\e.png')
-            st.image('images\ew.png')
+            st.image('images/e.png')
+            st.image('images/ew.png')
 
             
         st.subheader('Hotel Bookings')
@@ -54,17 +54,17 @@ def display_activities(day):
             st.write('Address: Via Gombito 4, Bergamo')
             st.markdown(f"[Open Google Maps](https://www.google.com/maps?q=Via+Gombito+4,+Bergamo)", unsafe_allow_html=True)
             st.subheader('Access Instructions')
-            st.image('images\Hotel11.jpg')  # Replace with the actual image URL or path
+            st.image('images/Hotel11.jpg')  # Replace with the actual image URL or path
 
             st.write("When you arrive at the front entrance of Via Gombito 4, as shown in the image over, enter the following access code on the keypad:")
             st.write("**Access Code:** 1168")
             st.write("After entering through the door, you will find yourself inside the courtyard of the palace. Then you go to the staircase and go in that door which is always open. The entrance door to B&B San Lorenzo is on the first floor, after the staircase.")
-            st.image('images\Hotel1.jpg')  # Replace with the actual image URL or path
+            st.image('images/Hotel1.jpg')  # Replace with the actual image URL or path
             st.write("To log in, simply enter the following code on the keypad:")
             st.write("**Login Code:** 202301#")
             st.write("Use the same code to open the door to the room you have booked:")
             st.write("**Room Name:** DON PASQUALE")
-            st.image('images\Ticket.png')  # Replace with the actual image URL or path
+            st.image('images/Ticket.png')  # Replace with the actual image URL or path
 
         st.subheader('Hotel Bookings')
 
@@ -75,7 +75,7 @@ def display_activities(day):
             st.write('Hotel Name: Milan Royal Suites Centro Brera')
             st.write('Address: Via dell Orso 20, 20124 Milan')
             st.subheader('Access Instructions')
-            st.image('images\Hotel11.jpg')  # Replace with the actual image URL or path
+            st.image('images/Hotel11.jpg')  # Replace with the actual image URL or path
             st.write('This artpartment are located close to Milan Centro Brera, we have other arpartments that are located in Milano, so if any doubt you can use same address to find it. Via dell Orso 20, 20124 Milan')
 
         st.subheader('Hotel Bookings')
@@ -87,7 +87,7 @@ def display_activities(day):
             st.write('Hotel Name: Casa Mario Lupo - Apartments and Rooms')
             st.write('Address: Via Mario Lupo 12, 24129, Bergamo')
             st.subheader('Access Instructions')
-            st.image('images\Hotel11.jpg')  # Replace with the actual image URL or path
+            st.image('images/Hotel11.jpg')  # Replace with the actual image URL or path
             st.write('To check in you will go to the shop called Prelibastessen. It is in Via Mario lupo 12 A. Here you will meet the owner that will help you. You will also need to pay local tax for the stay, that will be in total 24 euro and be payed in cash to owner when checking in.')
         
         # Opera Ticket details
@@ -96,8 +96,8 @@ def display_activities(day):
             st.write('Date: January 17, 2024')
             st.write('Time: 20:00')
             st.write('Enjoy a night at the opera in Milan!')
-            st.image('images\icket1.png')
-            st.image('images\icket2.png')
+            st.image('images/icket1.png')
+            st.image('images/icket2.png')
             st.write('Seating: Palchi Zona 1')
             st.write('Seat 1: PALCO II ORDINE SX n. 3 Posto 1')
             st.write('Seat 2: PALCO II ORDINE SX n. 3 Posto 2')
@@ -105,30 +105,30 @@ def display_activities(day):
     elif day == 'Monday':
             st.success('Du vil sjekke inn på det nye hotellet på mandag.')
 
-            st.image('images\La Rocca.jpg')
+            st.image('images/La Rocca.jpg')
             with st.expander('Aktivitet 1: La Rocca'):
                 st.write('Utforsk den historiske festningen La Rocca, som tilbyr fantastisk panoramautsikt over Bergamo og omgivelsene.')
                 st.write('Du kan gå inn i museet for å lære mer om det og også gå opp på toppen av festningen. Ved siden av kan du gå inn i denne vakre parken - et minnesmerke for de falne i første og andre verdenskrig.')
-                st.image('images\La Rocca.jpg')
+                st.image('images/La Rocca.jpg')
                 st.markdown(f"[Open Google Maps](https://www.google.com/maps?q=La+Rocca,+Bergamo)", unsafe_allow_html=True)
 
-            st.image('images\Colleoniapel.jpg')
+            st.image('images/Colleoniapel.jpg')
             with st.expander("Aktivitet 2: Colleoni's Kapell"):
                 st.write("Oppdag det vakre Colleoni's Kapell, et mesterverk av renessansearkitektur prydet med intrikate dekorasjoner.")
-                st.image('images\Colleoniapel.jpg')
+                st.image('images/Colleoniapel.jpg')
                 st.markdown(f"[Open Google Maps](https://www.google.com/maps?q=Colleoni's+Chapel,+Bergamo)", unsafe_allow_html=True)
 
-            st.image('images\Piazza Vecchia.jpg')
+            st.image('images/Piazza Vecchia.jpg')
             with st.expander("Aktivitet 3: Piazza Vecchia"):
                 st.write("Beundre den vakre plassen, hvor du vil se Civic Tower. Et tårn du kan gå opp i og se hele byen. Du vil også se Basilica di Santa Maria Maggiore, en vakker kirke. Det anbefales å dra om kvelden for å se solnedgangen. Åpningstidene er fra 10:00 til 18:00.")
-                st.image('images\Piazza Vecchia.jpg')
+                st.image('images/Piazza Vecchia.jpg')
                 st.markdown(f"[Open Google Maps](https://www.google.com/maps?q=Basilica+di+Santa+Maria+Maggiore,+Bergamo)", unsafe_allow_html=True)
 
-            st.image('images\mura.jpg')
+            st.image('images/mura.jpg')
             with st.expander('Aktivitet 4: Bergamos murer'):
                 st.write('Utforsk de historiske murene i Bergamo, som omgir den gamle byen og tilbyr panoramautsikt over byen.')
                 st.write('Du kan gå langs murene og nyte den vakre naturen. Du kan besøke Porta San Giacomo, en av hovedportene til murene.')
-                st.image('images\mura.jpg')
+                st.image('images/mura.jpg')
                 st.markdown(f"[Open Google Maps](https://www.google.com/maps?q=Walls+of+Bergamo)", unsafe_allow_html=True)
 
 
