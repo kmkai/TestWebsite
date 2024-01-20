@@ -25,7 +25,7 @@ def display_activities(day):
 
         with st.expander('Milan Bergamo to Oslo Torp'):
             st.write('Date: January 21, 2024')
-            st.write('Gate Close: 14:20')
+            st.write('Gate Close: 14:25')
             st.write('Departure Time: 14:55')
             st.write('Departure Airport: Milan Bergamo')
             # ... add other details as needed
