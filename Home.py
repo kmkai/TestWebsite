@@ -29,9 +29,9 @@ def display_activities(day):
             st.write('Departure Time: 14:55')
             st.write('Departure Airport: Milan Bergamo')
             # ... add other details as needed
-            # st.image('images/Boarding-pass1.png')  # Replace with your actual image URL
-            # st.image('images/Boarding-pass2.png')  # Replace with your actual image URL
-
+            st.image('images/nytt.png')  # Replace with your actual image URL
+            st.image('images/nytt2.png')  # Replace with your actual image URL
+            
         st.subheader('Bus Ticket to hotel')
         with st.expander('Bus Ticket'):
             st.write("To get to Porta San Giacomo from Milan Bergamo Airport, you can take the bus with a sign beside it saying number 1.")
